@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "adventure_mod:portable_food"
+    },
+    "title": {
+      "translate": "adventure.tab.title"
+    },
+    "description": {
+      "translate": "adventure.tab.description"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

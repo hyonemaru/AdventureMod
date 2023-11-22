@@ -1,0 +1,7 @@
+item.portable_food.name=PortableFood
+item.portable_ct.name=MobileWorkKit
+adventure.tab.title=Adventure
+adventure.tab.description=Let's go to Adventure
+adventure.PF.title=Preparation Part 1: Food
+adventure.PF.description=Let's make a portable meal using four pieces of wheat as food.
+item.tutorial.portable_food=It's easy and has a high recovery rate, but it tastes so bad that it makes you feel nauseous,Dogs can eat it too, but it's not something I really want them to eat.

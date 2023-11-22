@@ -1,0 +1,28 @@
+{
+
+  "display": {
+    "icon": {
+      "item": "adventure_mod:portable_food"
+    },
+    "title": {
+      "translate": "adventure.PF.title"
+    },
+    "description": {
+      "translate": "adventure.PF.description"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "parent":"adventure_mod:adventure/root",
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "adventure_mod:portable_food"
+          }
+        ]
+      }
+    }
+  }
+}
