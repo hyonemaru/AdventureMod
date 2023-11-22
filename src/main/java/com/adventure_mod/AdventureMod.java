@@ -27,7 +27,7 @@ public class AdventureMod {
     }
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
+        NetworkRegistry.INSTANCE.registerGuiHandler(MOD_ID, new GuiHandler());
     }
 
     public static final Item PORTABLE_FOOD = new PortableFood(10,0.8f,true);
