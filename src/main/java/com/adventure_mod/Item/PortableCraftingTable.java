@@ -20,10 +20,10 @@ public class PortableCraftingTable extends Item {
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-        if(!worldIn.isRemote) {
-        playerIn.openGui(AdventureMod.instance,GuiHandler.CUSTOM_WORKBENCH,worldIn,(int) playerIn.posX,(int) playerIn.posY,(int)playerIn.posZ);
+        if (worldIn.isRemote) {
+            playerIn.openGui(AdventureMod.instance, GuiHandler.CUSTOM_WORKBENCH, worldIn, playerIn.getPosition().getX(), playerIn.getPosition().getY(), playerIn.getPosition().getZ());
         }
-        return new ActionResult<>(EnumActionResult.SUCCESS,playerIn.getHeldItem(handIn));
+        return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }
 }
 

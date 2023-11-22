@@ -25,13 +25,15 @@ public class AdventureMod {
     public AdventureMod() {
         instance = this;
     }
+
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         NetworkRegistry.INSTANCE.registerGuiHandler(MOD_ID, new GuiHandler());
     }
 
-    public static final Item PORTABLE_FOOD = new PortableFood(10,0.8f,true);
     public static final Item PORTABLE_CT = new PortableCraftingTable();
+    public static final Item PORTABLE_FOOD = new PortableFood(10,0.8f,true);
+
     @SubscribeEvent
     public static void onRegisterItems(RegistryEvent.Register<Item> event){
         event.getRegistry().register(PORTABLE_FOOD.setRegistryName(MOD_ID,"portable_food"));
